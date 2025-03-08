@@ -3,15 +3,17 @@
 //
 //int main()
 //{
-//    FILE *file=fopen("example.txt","w");
+//    FILE *file=fopen("example.txt","r+");
 //    if (file==NULL){
 //        printf("error opening file for writing.\n");
 //        return 1;
 //    }
+//    fseek(file,0,SEEK_SET);
+//    fprintf(file,"UPDATING CONTENT.UPDATED WORLD");
 //
-//    fprintf(file,"Hello world!\n");
-//    fprintf(file,"This is a simple file handling example in c.\n");
+//
 //    fclose(file);
 //    printf("Data written to file successfully.\n");
 //    return 0;
 //}
+//
